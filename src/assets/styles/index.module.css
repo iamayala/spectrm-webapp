@@ -1,0 +1,98 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --primary: #1da1f2;
+  --wall: #05141c;
+  --background: #1b2730;
+  --grey: #28353e;
+  --pink: #e68295;
+  --green: #24c08f;
+  --blue: #4f91f5;
+  --white-hover: #e6e6e6;
+}
+
+* {
+  /* background-color: var(--background); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: var(--wall);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginView {
+  height: 70vh;
+  width: 65vh;
+  background-color: var(--black);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 20px; */
+}
+
+.title {
+  color: var(--white);
+  font-size: 28px;
+}
+
+.button {
+  background: var(--white);
+  width: 300px;
+  height: 45px;
+  border-radius: 40px;
+  border-color: var(--grey);
+  border-width: 0;
+  font-size: 16px;
+  color: var(--black);
+  font-weight: bold;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--white-hover);
+}
+
+.buttonTransparent {
+  background: none;
+  /* background-color: var(--background); */
+  width: 300px;
+  height: 45px;
+  border-radius: 40px;
+  border-color: var(--grey);
+  border-width: 1px;
+  font-size: 16px;
+  color: var(--white);
+  font-weight: bold;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10;
+  /* border: none; */
+}
+
+.loginInput {
+  outline: var(--primary);
+  width: 280px;
+  height: 55px;
+  border-color: var(--grey);
+  border-width: 1px;
+  border-radius: 5px;
+  padding-inline: 10px;
+  background: none;
+  margin-bottom: 10px;
+  color: var(--white);
+  font-size: 16px;
+}
